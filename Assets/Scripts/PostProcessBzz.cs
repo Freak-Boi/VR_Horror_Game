@@ -20,18 +20,22 @@ public class PostProcessBzz : MonoBehaviour
 
     private void Update()
     {
-        float distance = Vector3.Distance(slender.position, transform.position);
-        float angle = Vector3.Angle(transform.forward, slender.position - transform.position);
+        if (slender)
+        {
+            float distance = Vector3.Distance(slender.position, transform.position);
+            float angle = Vector3.Angle(transform.forward, slender.position - transform.position);
 
-        if (angle < 50 && distance < 15)
-        {
-            animator.SetBool("bzz", true);
-            timeNotLooking = 0;
-        }
-        else
-        {
-            animator.SetBool("bzz", false);
-            timeNotLooking += Time.deltaTime;
+
+            if (angle < 50 && distance < 15)
+            {
+                animator.SetBool("bzz", true);
+                timeNotLooking = 0;
+            }
+            else
+            {
+                animator.SetBool("bzz", false);
+                timeNotLooking += Time.deltaTime;
+            }
         }
     }
 

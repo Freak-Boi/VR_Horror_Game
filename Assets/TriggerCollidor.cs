@@ -7,9 +7,10 @@ public class TriggerCollidor : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
+        
         if(other.gameObject.tag == "House")
         {
-
+           
             SceneManager.LoadScene("TheHouse Demo");
 
         }       

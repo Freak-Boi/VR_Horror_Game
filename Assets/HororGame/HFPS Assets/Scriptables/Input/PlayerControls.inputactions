@@ -490,6 +490,17 @@
                 },
                 {
                     "name": "",
+                    "id": "fb6570bd-d6c1-4969-a0c1-1001ef296427",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "Use",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "863be21e-bab3-46c0-ab34-e8c5e57cc402",
                     "path": "<DualShockGamepad>/buttonWest",
                     "interactions": "",

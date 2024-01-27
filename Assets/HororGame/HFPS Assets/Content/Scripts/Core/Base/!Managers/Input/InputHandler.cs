@@ -22,11 +22,7 @@ using ThunderWire.Helpers;
 
 namespace ThunderWire.Input
 {
-    /// <summary>
-    /// Handler for Unity Input System.
-    /// Requires* (Unity Input System Package)
-    /// Supports: Keyboard, Mouse, PS4, Xbox
-    /// </summary>
+  
     public class InputHandler : Singleton<InputHandler>
     {
         public enum Device
